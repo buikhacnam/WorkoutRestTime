@@ -55,8 +55,7 @@ let quotes = ['"The last three or four reps is what makes the muscle grow."- Arn
 
     let inteval = setInterval(() => {
       timeLeft -= 1;
-      timeLeftDisplay.innerHTML = timeLeft;
-      
+      timeLeftDisplay.innerHTML = timeLeft;   
       
     }, 1000)
     setTimeout(() => { 
