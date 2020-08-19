@@ -46,24 +46,24 @@ let quotes = ['"The last three or four reps is what makes the muscle grow."- Arn
 
   */
 
-  startBtn.addEventListener('click', function countDown() {
-  
+   startBtn.addEventListener('click', function countDown() {
+    this.disabled = true;
     quoteGenerator();
 
     repCount = repCount + 1;
     reps.innerHTML = repCount;
 
     let inteval = setInterval(() => {
-      timeLeftDisplay.innerHTML = timeLeft;
       timeLeft -= 1;
-      this.disabled = true;
+      timeLeftDisplay.innerHTML = timeLeft;
+      
       
     }, 1000)
     setTimeout(() => { 
       clearInterval(inteval); 
-      timeLeft = 90; 
+      timeLeft = 5; 
       this.disabled = false;
-    }, 91000);
+    }, 90000);
     
 
   
