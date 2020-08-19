@@ -60,7 +60,7 @@ let quotes = ['"The last three or four reps is what makes the muscle grow."- Arn
     }, 1000)
     setTimeout(() => { 
       clearInterval(inteval); 
-      timeLeft = 5; 
+      timeLeft = 90; 
       this.disabled = false;
     }, 90000);
     
