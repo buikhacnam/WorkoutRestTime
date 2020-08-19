@@ -46,21 +46,28 @@ let quotes = ['"The last three or four reps is what makes the muscle grow."- Arn
 
   */
 
-  startBtn.onclick = function() {
-  		quoteGenerator();
+  startBtn.addEventListener('click', function countDown() {
+  
+    quoteGenerator();
 
-  	repCount = repCount + 1;
+    repCount = repCount + 1;
     reps.innerHTML = repCount;
 
-  	let inteval = setInterval(() => {
-  		timeLeftDisplay.innerHTML = timeLeft;
-  		timeLeft -= 1;
-  	}, 1000)
-  	setTimeout(() => { 
-  		clearInterval(inteval); 
-  		timeLeft = 90; 
-  	}, 91000);
-  }
+    let inteval = setInterval(() => {
+      timeLeftDisplay.innerHTML = timeLeft;
+      timeLeft -= 1;
+      this.disabled = true;
+      
+    }, 1000)
+    setTimeout(() => { 
+      clearInterval(inteval); 
+      timeLeft = 90; 
+      this.disabled = false;
+    }, 91000);
+    
+
+  
+  });
  
  
  
