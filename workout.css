@@ -50,7 +50,7 @@ h1 { font-size: 56px;}
 h2 { font-size: 36px;}
 h3 { font-size: 28px;}
 h4 { font-size: 24px;}
-h5 { font-size: 20px;}
+h5 { font-size: 20px; font-weight: 0.5em;}
 h6 { font-size: 16px;}
 
 
@@ -75,7 +75,7 @@ h6 { font-size: 16px;}
 	display: grid;
 	text-align: center;
 	align-content: center;
-	min-height: 15em;
+	min-height: 7em;
 }
 
 .stat-wrapper {
@@ -90,23 +90,35 @@ h6 { font-size: 16px;}
 }
 
 .left-column {
-	border: 1px solid white;
+	display: grid;
+	border: 2px solid var(--borderColor);
 	text-align: center;
-	min-height: 4em;
-	padding-top:50px;
-	padding-bottom: 50px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	background-color: var(--mainColor);
+    -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	
 }
 
 .right-column {
-	border: 1px solid white;
+	display: grid;
+	border: 2px solid var(--borderColor);
 	text-align: center;
-	min-height: 4em;
-	padding-top:50px;
-	padding-bottom: 50px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	background-color: var(--mainColor);
+	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 }
 
-
+.below {
+	display: grid;
+	background-color: var(--secondaryColor);
+	justify-content: center;
+}
 
 
 #submit-btn{
@@ -117,14 +129,82 @@ h6 { font-size: 16px;}
 	color: #fff;
 	background-color: var(--buttonColor);
 	border:none;
+	border-radius: 5px;
 }
 
+.choose-time {
+	margin-top: 15px;
+	display: grid;
+	justify-content: center;
+	grid-template-columns: 1fr 1fr;
+	align-content: flex-end;
+}
+
+.set-time {
+	display: grid;
+	align-content: center;
+	justify-content: center;
+	grid-template-columns: 1fr 2fr;
+}
+
+.set-time label {
+
+	align-self: center;
+	
+}
+
+
+.set-time input {
+	line-height: 2.7em;
+	background-color: var(--secondaryColor);
+	border: none;
+
+}
+
+.set-time-button {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
+  
+}
+
+.set-time-button input {
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border: none;
+	background-color: #17a2b8;
+	font-size: 2em;
+	border-radius: 5px;
+	align-self: center;
+
+}
+
+#rest-time {
+	width: 70%;
+	background-color: var(--secondaryColor);
+	border-radius: 5px;
+	border:1px solid var(--borderColor);
+	font-size: 14px;
+	padding-top: 5px;
+	padding-bottom:5px; 
+}
+
+
 button {
-	font-size: 3em;
+	font-size: 2.5em;
+    margin-top: 15px;
+	margin-bottom: 15px;
 }
 
 i {
     color: red;
+}
+
+input {
+	background-color: var(--mainColor);
 }
 
 @media screen and (max-width: 900px){
