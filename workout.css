@@ -75,7 +75,7 @@ h6 { font-size: 16px;}
 	display: grid;
 	text-align: center;
 	align-content: center;
-	min-height: 1.5em;
+	min-height: 1.2em;
 }
 
 .stat-wrapper {
@@ -93,6 +93,7 @@ h6 { font-size: 16px;}
 	display: grid;
 	border: 2px solid var(--borderColor);
 	text-align: center;
+
 	
 	
     -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
@@ -127,84 +128,58 @@ h6 { font-size: 16px;}
     padding: 0;
 }
 
+.choose-time-container {
+	padding-bottom: 15px;
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	align-content: center;
+	align-items: center;
+	grid-gap: 10px; 
+}
+
+
+
+
+
+
+
+#rest-time {
+	
+	background-color: var(--secondaryColor);
+	border-radius: 5px;
+	border:1px solid var(--borderColor);
+	font-size: 24px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom:5px; 
+}
+
+#fireButton {
+	
+	background-color: var(--secondaryColor);
+	border-radius: 5px;
+	border:1px solid var(--borderColor);
+	font-size: 24px;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom:5px; 
+}
+
+
+
+
 #submit-btn{
 	margin-top: 10px;
 	width: 100%;
-	padding-top: 20px;
-	padding-bottom:20px; 
+	padding-top: 15px;
+	padding-bottom:15px; 
 	color: #fff;
 	background-color: var(--buttonColor);
 	border:none;
 	border-radius: 5px;
 }
-
-
-
-.choose-time {
-	margin-top: 15px;
-	display: grid;
-	justify-content: space-between;
-	grid-template-columns: 1fr 1fr;
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-}
-
-.set-time {
-	display: grid;
-	align-content: center;
-	justify-content: flex-start;
-	grid-template-columns: 1fr 2fr;
-}
-
-
-.set-time label {
-
-	align-self: center;
-	text-align: center;
-}
-
-
-.set-time input {
-	line-height: 2.7em;
-	background-color: var(--secondaryColor);
-	border: 1px solid var(--borderColor);
-	text-align: center;
-	font-size: 5em;
-	font-weight: 5em;
-
-}
-
-.set-time-button {
-  display: grid;
-  justify-self: flex-end;
-  align-self: center;
-  
-}
-
-.set-time-button input {
-	padding-left: 20px;
-	padding-right: 20px;
-	
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border: 1px solid var(--borderColor);
-	background-color: var(--secondaryColor);
-	font-size: 1.5em;
-	border-radius: 5px;
-	align-self: center;
-
-}
-
-#rest-time {
-	width: 70%;
-	background-color: var(--secondaryColor);
-	border-radius: 5px;
-	border:1px solid var(--borderColor);
-	font-size: 14px;
-	padding-top: 5px;
-	padding-bottom:5px; 
-}
-
 
 button {
 	font-size: 2.5em;
@@ -213,12 +188,18 @@ button {
 }
 
 i {
-    color: red;
+    color: #f2400a;
 }
 
 input {
 	background-color: var(--mainColor);
 }
+
+.end {
+	display: grid;
+	align-self: flex-end;
+}
+
 
 @media screen and (max-width: 900px){
 	.main-container{
