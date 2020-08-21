@@ -24,7 +24,9 @@ html, body{
 	scroll-behavior: smooth;
 }
 
-
+body *{
+	transition: 0.3s;
+}
 
 
 h1, h2, h3, h4, h5, h6, strong{
@@ -152,6 +154,9 @@ h6 { font-size: 16px;}
 	text-align: center;
 	padding-top: 5px;
 	padding-bottom:5px; 
+	 -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 }
 
 #fireButton {
@@ -163,6 +168,9 @@ h6 { font-size: 16px;}
 	text-align: center;
 	padding-top: 5px;
 	padding-bottom:5px; 
+	 -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 }
 
 
