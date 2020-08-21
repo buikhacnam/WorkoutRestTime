@@ -75,7 +75,7 @@ h6 { font-size: 16px;}
 	display: grid;
 	text-align: center;
 	align-content: center;
-	min-height: 2em;
+	min-height: 1.5em;
 }
 
 .stat-wrapper {
@@ -98,6 +98,7 @@ h6 { font-size: 16px;}
     -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+
 	
 }
 
@@ -117,12 +118,13 @@ h6 { font-size: 16px;}
 	display: grid;
 	background-color: var(--secondaryColor);
 	justify-content: center;
+	padding: 0;
 }
 
 .above {
 	display: grid;
 	background-color: var(--mainColor);
-
+    padding: 0;
 }
 
 #submit-btn{
@@ -187,7 +189,7 @@ h6 { font-size: 16px;}
 	padding-bottom: 10px;
 	border: 1px solid var(--borderColor);
 	background-color: var(--secondaryColor);
-	font-size: 2em;
+	font-size: 1.5em;
 	border-radius: 5px;
 	align-self: center;
 
