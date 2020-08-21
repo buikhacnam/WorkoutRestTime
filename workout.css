@@ -75,7 +75,7 @@ h6 { font-size: 16px;}
 	display: grid;
 	text-align: center;
 	align-content: center;
-	min-height: 7em;
+	min-height: 2em;
 }
 
 .stat-wrapper {
@@ -84,7 +84,7 @@ h6 { font-size: 16px;}
 	justify-content: center;
 	align-content: center;
 	grid-gap: 30px;
-	min-height: 4em;
+	
 	padding-bottom: 15px;
 	padding-top: 15px;
 }
@@ -136,10 +136,12 @@ h6 { font-size: 16px;}
 	border-radius: 5px;
 }
 
+
+
 .choose-time {
 	margin-top: 15px;
 	display: grid;
-	justify-content: center;
+	justify-content: space-between;
 	grid-template-columns: 1fr 1fr;
 	margin-bottom: 0px;
 	padding-bottom: 0px;
@@ -148,9 +150,10 @@ h6 { font-size: 16px;}
 .set-time {
 	display: grid;
 	align-content: center;
-	justify-content: center;
+	justify-content: flex-start;
 	grid-template-columns: 1fr 2fr;
 }
+
 
 .set-time label {
 
@@ -171,15 +174,15 @@ h6 { font-size: 16px;}
 
 .set-time-button {
   display: grid;
-  justify-content: center;
-  align-content: center;
+  justify-self: flex-end;
   align-self: center;
   
 }
 
 .set-time-button input {
-	padding-left: 60px;
-	padding-right: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
 	padding-top: 10px;
 	padding-bottom: 10px;
 	border: 1px solid var(--borderColor);
