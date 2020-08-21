@@ -17,6 +17,8 @@
 	/>
 
 	<link rel="stylesheet" type="text/css" href="workout.css">
+
+	<link id='theme-style' rel="stylesheet" type="text/css" href=""> 
 	
 </head>
 <body>
@@ -33,8 +35,9 @@
 		<div class="main-container">
         <div class='stat-wrapper'>
           <div class=left-column>
+            
             <div class='above'>
-            	<h4>Sets:</h4>
+            	<h4>Num Of Sets:</h4>
             </div>
 
        		 <div class='below'>
@@ -66,27 +69,27 @@
 		     		<input type="number" id="rest-time" name="rest-time" min="1" max="10000000" placeholder="60 seconds">
 		     	</div>
 		     	<div class='set-time-button'>
-	     			<input type="button" id="fireButton" value="Set!">
+	     			<input type="button" id="fireButton" value="Set">
 	     		</div>
 	    	</div>
             
             <div class='submit-time'>
 			
 				
-				<h4 style='text-align: center;'>Recovery time is set to <strong id='changed' style='color: red;'>0</strong> seconds</h4>
+				<h4 style='text-align: center; margin: 10px;'>Recovery time is set to <strong id='changed' style='color: red;'>0</strong> seconds</h4>
 			</div>
 
 		</div>
 	</section>
 
 
-	<section class="s1">
+	<section class="s2">
 		<div class='main-container'>
-			<button id="submit-btn" value="Hit">WOO!</button>
+			<button id="submit-btn" value="Hit">Hit</button>
 		</div>
 	</section>
-	<section class="s2">
-        <p style="text-align: center;">
+	<section class="s1">
+        <p style="text-align: center; min-height: 3em;">
 		Made with <i class="fas fa-burn"></i> by
 		<a target="_blank" href="#">Mr Bui</a>
 		

@@ -84,18 +84,17 @@ h6 { font-size: 16px;}
 	justify-content: center;
 	align-content: center;
 	grid-gap: 30px;
-	min-height: 8em;
-	padding-bottom: 25px;
-	padding-top: 25px;
+	min-height: 4em;
+	padding-bottom: 15px;
+	padding-top: 15px;
 }
 
 .left-column {
 	display: grid;
 	border: 2px solid var(--borderColor);
 	text-align: center;
-	padding-top:10px;
-	padding-bottom: 10px;
-	background-color: var(--mainColor);
+	
+	
     -webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
@@ -106,9 +105,9 @@ h6 { font-size: 16px;}
 	display: grid;
 	border: 2px solid var(--borderColor);
 	text-align: center;
-	padding-top:10px;
-	padding-bottom: 10px;
-	background-color: var(--mainColor);
+	
+	
+	
 	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
@@ -120,12 +119,17 @@ h6 { font-size: 16px;}
 	justify-content: center;
 }
 
+.above {
+	display: grid;
+	background-color: var(--mainColor);
+
+}
 
 #submit-btn{
 	margin-top: 10px;
 	width: 100%;
-	padding-top: 25px;
-	padding-bottom:25px; 
+	padding-top: 20px;
+	padding-bottom:20px; 
 	color: #fff;
 	background-color: var(--buttonColor);
 	border:none;
@@ -137,7 +141,8 @@ h6 { font-size: 16px;}
 	display: grid;
 	justify-content: center;
 	grid-template-columns: 1fr 1fr;
-	align-content: flex-end;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
 }
 
 .set-time {
@@ -157,7 +162,10 @@ h6 { font-size: 16px;}
 .set-time input {
 	line-height: 2.7em;
 	background-color: var(--secondaryColor);
-	border: none;
+	border: 1px solid var(--borderColor);
+	text-align: center;
+	font-size: 5em;
+	font-weight: 5em;
 
 }
 
@@ -174,8 +182,8 @@ h6 { font-size: 16px;}
 	padding-right: 60px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border: none;
-	background-color: #17a2b8;
+	border: 1px solid var(--borderColor);
+	background-color: var(--secondaryColor);
 	font-size: 2em;
 	border-radius: 5px;
 	align-self: center;
@@ -195,8 +203,8 @@ h6 { font-size: 16px;}
 
 button {
 	font-size: 2.5em;
-    margin-top: 15px;
-	margin-bottom: 15px;
+    margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 i {

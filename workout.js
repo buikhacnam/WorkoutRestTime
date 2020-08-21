@@ -23,7 +23,7 @@ let quotes = ['"The last three or four reps is what makes the muscle grow."- Arn
 
   function countDown() {
     this.disabled = true;
-    
+    document.getElementById('theme-style').href = 'green.css'
     let initalTimeLeft = timeLeft;
     
     quoteGenerator();
@@ -41,6 +41,7 @@ let quotes = ['"The last three or four reps is what makes the muscle grow."- Arn
     setTimeout(() => { 
       clearInterval(inteval); 
        //timeLeft = initalTimeLeft;
+      document.getElementById('theme-style').href = 'workout.css'
       this.disabled = false;
     }, (initalTimeLeft * 1000));
   }
