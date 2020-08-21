@@ -16,6 +16,8 @@
 	crossorigin="anonymous"
 	/>
 
+	<script src="https://kit.fontawesome.com/4b0dbe2632.js" crossorigin="anonymous"></script>
+
 	<link rel="stylesheet" type="text/css" href="workout.css">
 
 	<link id='theme-style' rel="stylesheet" type="text/css" href=""> 
@@ -37,7 +39,7 @@
           <div class=left-column>
             
             <div class='above'>
-            	<h4>Num Of Sets:</h4>
+            	<h5>Num Of Sets:</h5>
             </div>
 
        		 <div class='below'>
@@ -49,7 +51,7 @@
 
           <div class='right-column'>
              <div class='above'>
-           		 <h4>Revovery time:</h4>
+           		 <h5>Revovery time:</h5>
              </div>
              <div class='below'>
             	<h2 id='time-left'>0</h2>
@@ -70,7 +72,7 @@
 		     		<input type="number" id="rest-time" name="rest-time" min="1" max="10000000" placeholder="60 seconds">
 		     	</div>
 		     	<div class='set-time-button'>
-	     			<input type="button" id="fireButton" value="Set">
+	     			<input type="submit" id="fireButton" value="Set">
 	     		</div>
 	    	</div>
 	        </div>
@@ -78,7 +80,7 @@
             <div class='submit-time'>
 			
 				
-				<h4 style='text-align: center; margin: 10px;'>Recovery time is set to <strong id='changed' style='color: red;'>0</strong> seconds</h4>
+				<h5 style='text-align: center; margin: 10px;'>Recovery time is set to <strong id='changed' style='color: red;'>0</strong> seconds</h5>
 			</div>
 
 		</div>
@@ -107,5 +109,6 @@
 	
 	
 	<script type="text/javascript" src="workout.js"></script>
+
 </body>
 </html>
