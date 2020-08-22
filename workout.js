@@ -11,7 +11,8 @@ let quotes = ['"The last three or four reps is what makes the muscle grow." - Ar
   const totalTime = document.querySelector('#total-time');
   const changed = document.querySelector('#changed');
    let sound = document.getElementById("myAudio"); 
-  let timeLeft;
+  let timeLeft = 60;
+  const message = document.getElementById("message"); 
   let repCount = 0;
   let total = 0;
  
