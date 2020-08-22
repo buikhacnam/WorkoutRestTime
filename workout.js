@@ -23,7 +23,7 @@ let quotes = ['"The last three or four reps is what makes the muscle grow." - Ar
   function countDown() {
     this.disabled = true;
     document.getElementById('theme-style').href = 'green.css'
-    startBtn.innerHTML = "recovering...";
+    startBtn.innerHTML = "resting...";
     let initalTimeLeft = timeLeft;
     
     quoteGenerator();
