@@ -72,6 +72,7 @@ function handleKeyPress(e) {
   if (e.keyCode === 13) {
     fireButton.click();
     return false;
+    guessInput.blur();
   }
 }
 
